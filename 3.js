@@ -21,4 +21,13 @@ addTask("Hurling");
 addTask("Rugby");
 console.log("\n");
 
+//All the tasks in the array
+let listAllTasks = () =>{
+    Tasks.forEach((element)=>{
+        console.log(element);
+    })
+}
+listAllTasks();
+console.log("\n");
+
 
