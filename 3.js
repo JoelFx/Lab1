@@ -30,4 +30,20 @@ let listAllTasks = () =>{
 listAllTasks();
 console.log("\n");
 
+//Delete the task from the array
+let deleteTask = (task) =>{
+    let index = Tasks.indexOf(task);
+    if(index > -1){
+        Tasks.splice(index, 1);
+        console.log(task + " has been removed from my Tasks");
+    }else{
+        console.log(task + " not found in my Tasks");
+    }
+}
+
+deleteTask("fdfsdfb");
+deleteTask("Software Testing");
+console.log("\n");
+listAllTasks();
+
 
